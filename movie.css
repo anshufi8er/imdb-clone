@@ -1,0 +1,94 @@
+/* CSS Variables */
+:root {
+    --default-text-color: #fff;
+    --page-background-color: #073240;
+    --card-text-color: rgb(232, 233, 243);
+    --info-color: #7dabef;
+    
+  }
+  
+  body {
+    background-color: --page-background-color;
+    color: var(--default-text-color);
+  }
+  
+  /* NAVBAR */
+  .fa-star {
+    color: var(--card-text-color);
+  }
+  
+  .site-name {
+    color: #ffc107;
+    position: absolute;
+    font-size: 2rem;
+    margin-top: -1.5rem;
+    top: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #btn{
+    float: right !important;
+    justify-items: end;
+  }
+
+  /* Movie card*/
+  .card {
+    border: 0;
+    background: radial-gradient(
+      circle at 10% 20%,
+      rgb(0, 0, 0) 0%,
+      rgb(64, 64, 64) 90.2%
+    );
+    box-shadow: 0px 16px 24px 2px hsla(0, 0%, 0%, 0.14),
+      0px 6px 30px 5px hsla(0, 0%, 0%, 0.12),
+      0px 8px 10px -5px hsla(0, 0%, 0%, 0.2);
+  }
+  
+  .card-text {
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--card-text-color);
+  }
+  
+  .info-type {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--default-text-color);
+  }
+  
+  .information {
+    font-weight: 500;
+    font-size: 0.9em;
+    color: var(--info-color);
+  }
+  
+  
+  /* Responsiveness */
+  @media screen and (max-width: 767px) {
+    #poster {
+      margin-top: 1rem;
+      border-radius: 5px !important;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .site-name{
+        margin-top: -1rem;
+    }
+    #title {
+      font-size: x-large;
+    }
+  
+    h6 {
+      font-size: medium;
+    }
+  
+    h5 {
+      font-size: medium;
+    }
+  
+    #poster {
+      margin-top: 0px;
+      width: 100%;
+    }
+  }
